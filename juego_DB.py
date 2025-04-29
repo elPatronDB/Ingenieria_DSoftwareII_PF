@@ -41,7 +41,7 @@ def main():
     limpiarPantalla()
     print("Bienvenido al juego de piedra, papel o tijera")
     if len(sys.argv) != 4:
-        print("Instrucciones: Escribe en consola: \n>>> juego.py op1 op2 op3\n\n***El espacio representa una ronda")
+        print("Instrucciones: Escribe en consola: \n>>> juego_DB.py op1 op2 op3\n\n***El espacio representa una ronda")
         print("\n*Opciones válidas: piedra, papel, tijera")
         sys.exit(1)
 
