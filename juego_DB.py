@@ -41,7 +41,7 @@ def main():
     limpiarPantalla()
     print("Bienvenido al juego de piedra, papel o tijera")
     if len(sys.argv) != 4:
-        print("Instrucciones: Escribe en consola: \n>>> juego_DB.py op1 op2 op3\n\n***El espacio representa una ronda")
+        print("Instrucciones: Escribe en consola: \n>>> python juego_DB.py op1 op2 op3\n\n***El espacio representa una ronda")
         print("\n*Opciones válidas: piedra, papel, tijera")
         sys.exit(1)
 
@@ -62,16 +62,16 @@ def main():
     puntosPrograma = 0
     
     for i in range(3):
-        print(f"\nRonda {i+1}: Humano ({jugadasHumano[i]}) vs Programa ({jugadasPrograma[i]})")
+        print(f"\n>>>>>{i+1}: Humano ({jugadasHumano[i]}) vs Programa ({jugadasPrograma[i]})")
         resultado = compararJugada(jugadasHumano[i], jugadasPrograma[i])
         if resultado == 1:
             puntosHumano += 1
-            print("  Gana humano")
+            print("        Gana humano")
         elif resultado == -1:
             puntosPrograma += 1
-            print("  Gana programa")
+            print("        Gana programa")
         else:
-            print("  Empate")
+            print("        Empate")
         time.sleep(2)
 
     print(f"\n****Jugadas del programa: {' '.join(jugadasPrograma)}****")
