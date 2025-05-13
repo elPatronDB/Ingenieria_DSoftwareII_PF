@@ -3,7 +3,7 @@ from juego_DB import compararJugada
 
 class TestJuegoPiedraPapelTijera(unittest.TestCase):
     def test_piedra_vs_piedra(self):
-        self.assertEqual(compararJugada("piedra", "piedra"), 1000) 
+        self.assertEqual(compararJugada("piedra", "piedra"), 0) 
 
     def test_piedra_vs_papel(self):
         self.assertEqual(compararJugada("piedra", "papel"), -1)  
