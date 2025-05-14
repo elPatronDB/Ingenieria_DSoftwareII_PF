@@ -23,7 +23,7 @@ def compararJugada(humano, programa):
         return 0
     elif (humano == "piedra" and programa == "tijera") or \
          (humano == "papel" and programa == "piedra") or \
-         (humano == "tijera" and programa == "papel"):
+         (humano == "pelota" and programa == "papel"):
         return 1
     else:
         return -1
